@@ -1,0 +1,26 @@
+.header{
+    height: 300px;
+    padding:10px;
+    background-color: palevioletred;
+    background-image: url(download.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    
+
+}
+h3{
+font-size:30px;
+text-decoration: overline;
+font-family: 'Times New Roman', Times, serif;
+}
+.second{
+    /* display:none; */
+    visibility: hidden;
+}
+.blog{
+    box-shadow: 5px 5px 5px pink;
+}
+.ver{
+    border: 2px solid purple;
+    /* display: block; */
+}
