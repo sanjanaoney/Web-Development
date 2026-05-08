@@ -1,4 +1,7 @@
-function brushTeeth(){
-    console.log('brush teeth everyday');
+const price=45;
+//function declare
+function fanoffkor(){
+    console.log('na korbona,gorom lagtese');
 }
-brushTeeth();
+//call the function
+fanoffkor();
