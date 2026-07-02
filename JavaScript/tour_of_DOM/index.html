@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour of DOM</title>
+    <style>
+        h1{
+           color:blueviolet; 
+        }
+    </style>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>This is header with no banner</h1>
+    </header>
+    <main>
+        <h1>Welcome to my DOM</h1>
+        <ul>
+            <li>Sunscreen</li>
+            <li>Serum</li>
+            <li>Toner</li>
+        </ul>
+    </main>
+    <script>
+        //console.log('Hello from JavaScript')
+       // console.log('Document Object Model');
+       const student={
+        name: 'Sanjana',
+        id: 121,
+        study: function(subject){
+        console.log('Studying subject:',subject)
+        }
+       }
+
+       const liCollection=document.getElementsByTagName('li');
+       for(const li of liCollection){
+        console.log(li.innerText)
+       }
+
+       //all h1 tags
+       const allHeadings=document.getElementsByTagName('h1');
+       for(const heading of allHeadings){
+        console.log(heading.innerText)
+       }
+    </script>
+  <script src="js/hello.js"></script>  
+</body>
+</html>
