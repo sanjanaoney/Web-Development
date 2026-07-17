@@ -8,6 +8,22 @@
         h1{
            color:blueviolet; 
         }
+        #food-title{
+            color:red;
+            /* background-color: bisque; */
+        }
+        .bg-red{
+            background-color: red;
+        }
+        .bold{
+            font-weight: 100;
+        }
+        .big{
+            font-size: 3em;
+        }
+       .food .foreign{
+        font-weight: 700;
+       } 
     </style>
     <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -16,16 +32,47 @@
         <h1>This is header with no banner</h1>
     </header>
     <main>
+        <section id="uk"class="skincare">
         <h1>Welcome to my DOM</h1>
+        <p>
+           Lorem ipsum dolor <span>cerave</span>sit amet <span>cetaphil</span> consectetur adipisicing elit. Eligendi, est! 
+        </p>
+        <h1>skdjsjdksjdkj <span>some text</span> sbcjkscksnc</h1>
         <ul>
             <li>Sunscreen</li>
-            <li>Serum</li>
-            <li>Toner</li>
+            <li id="band" class="">Serum</li>
+            <li class="foreign">Toner</li>
         </ul>
+        </section>
+        <section class="food">
+            <h1 id="food-title">Foods I love</h1>
+            <ul>
+                <li>Rice</li>
+                <li>Potato</li>
+                <li>Fish</li>
+                <li>Lentils</li>
+                <li class="foreign">Burger</li>
+                <li class="foreign">Pizza</li>
+                <li class="foreign">Pasta</li>
+            </ul>
+        </section>
+
+        <section id="players-container">
+            <h1>Players</h1>
+            <ul>
+                <li>Messi</li>
+                <li>Ronaldo</li>
+                <li>Neymar</li>
+                <li>Mbappe</li>
+                <!-- <li>Jude</li> -->
+            </ul>
+        </section>
+
+
     </main>
     <script>
-        //console.log('Hello from JavaScript')
-       // console.log('Document Object Model');
+        console.log('Hello from JavaScript')
+       console.log('Document Object Model');
        const student={
         name: 'Sanjana',
         id: 121,
@@ -44,6 +91,29 @@
        for(const heading of allHeadings){
         console.log(heading.innerText)
        }
+
+       //get by Id
+       const foodTitleH1=document.getElementById('food-title')
+       console.log(foodTitleH1.innerText);
+       foodTitleH1.innerText='Food I love to eat'
+       const bandElement=document.getElementById('band');
+       bandElement.innerText='Jalali sleeping Band'
+
+       //get elements by class name
+       const foreignElements=document.getElementsByClassName('foreign');
+       console.log(foreignElements);
+
+       for(const element of foreignElements)
+       {
+        console.log(element.innerText)
+       }
+
+       //query selector all
+       const spanElements=document.querySelectorAll('#uk p span');
+       for(const span of spanElements){
+        console.log(span.innerText)
+       }
+
     </script>
   <script src="js/hello.js"></script>  
 </body>
