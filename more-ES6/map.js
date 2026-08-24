@@ -23,3 +23,7 @@ console.log(firstLetters)
 const result=numbers.map((numbers,index)=>{
     console.log(num*index)
 })
+
+const result2=numbers.map((numbers,index)=>{
+    console.log(num)
+})
