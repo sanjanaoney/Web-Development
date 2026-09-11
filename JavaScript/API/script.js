@@ -6,19 +6,19 @@ fetch("https://jsonplaceholder.typicode.com/todos/1")
 .then((data)=>console.log(data));
 };
 
-const loadPost=()=>{
-    const url= "https://jsonplaceholder.typicode.com/posts";
-    fetch(url)
-    .then(res=>res.json())
-    // .then(json=>console.log(json))
-    .then(json=>displayPost(json))
-};
+// const loadPost=()=>{
+//     const url= "https://jsonplaceholder.typicode.com/posts";
+//     fetch(url)
+//     .then(res=>res.json())
+//     // .then(json=>console.log(json))
+//     .then(json=>displayPost(json))
+// };
 
 
-//we will show the data in the ui
-const displayPost=(posts)=>{
-// console.log(posts);
-posts.forEach((post)=>{
-   console.log(post);
-});
-};
+// //we will show the data in the ui
+// const displayPost=(posts)=>{
+// // console.log(posts);
+// posts.forEach((post)=>{
+//    console.log(post);
+// });
+// };
