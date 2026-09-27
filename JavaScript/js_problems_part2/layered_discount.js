@@ -1,4 +1,5 @@
-function layeredDiscountedTotal(quantity){
+function layeredDiscountedTotal(quantity)
+{
     const first100Price=100;
     const second100Price=90;
     const above200Price=70;
