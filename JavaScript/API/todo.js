@@ -1,8 +1,9 @@
-const loadTodo=()=>{
-    const url="https://jsonplaceholder.typicode.com/todos"
-    fetch(url)
-    .then((res)=>res.json())
-    .then((data)=>displayTodo(data));
+const loadTodo=async ()=>{
+    const url="https://jsonplaceholder.typicode.com/todos";
+    const res=await fetch(url)
+    const data=await res.json()
+    
+    displayTodo(data);
 };
 
 // {
@@ -38,4 +39,4 @@ todos.forEach((todo)=>{
     todoContainer.append(todoCard);
 })
 };
-loadTodo();
+loadTodo(); 
